@@ -1,0 +1,9 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2017-06-10 10:43:54
+project --topLevelPackage com.equisettle --projectName equisettle --java 7 --packaging POM
+module create --moduleName common --topLevelPackage com.equisettle.common
+module focus --moduleName ~
+module create --moduleName ui --topLevelPackage com.equisettle.ui --packaging POM
+module create --moduleName client --topLevelPackage com.school.ui.client
+module focus --moduleName common
+module focus --moduleName ui\client
+web mvc setup
